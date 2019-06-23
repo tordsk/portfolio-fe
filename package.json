@@ -1,0 +1,39 @@
+{
+  "name": "homepage-fe",
+  "version": "1.0.0",
+  "description": "--- home: true heroImage: https://vuepress.vuejs.org/hero.png actionText: Get Started → actionLink: /cv/ features:   - title: Simplicity First ---",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "axios": "^0.19.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "bulma": "^0.7.5",
+    "bulma-extensions": "^6.2.7",
+    "eslint": "<6.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.2",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^1.0.2",
+    "webpack": "^4.35.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "now-build": "npm run build && mv .vuepress/dist dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "vue-awesome": "^3.5.4"
+  }
+}
