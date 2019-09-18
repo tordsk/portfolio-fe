@@ -1,9 +1,9 @@
 <template>
-  <div class="ProjectCard timeline-content">
-    <p class="heading">{{ project.experience.start }}</p>
-    <p class="subtitle is-4">{{ project.name }}</p>
-    <p> {{ project.task[lang] }}</p>
-    <div class="card" :class="{ 'is-hidden': hidden }">
+  <div class="ProjectCard timeline-content is-parent">
+    <div class="heading">{{ project.experience.start }}</div>
+    <div class="subtitle is-4">{{ project.name }}</div>
+    <div class="description"> <p> {{ project.task[lang] }}</p></div>
+    <div class="card is-child" :class="{ 'is-hidden': hidden }">
       <div class="card-image">
         <figure class="image projectImage">
           <img
@@ -13,9 +13,8 @@
         </figure>
       </div>
       <div class="card-content">
-        <div class="content">
+        <div class="content is-child">
           <p> {{ project.description[lang] }}</p>
-          <br />
           <time :datetime="project.experience.start"> {{ project.experience.start }}</time> —
           <time :datetime="project.experience.end"> {{ project.experience.end ?  project.experience.end : "dd"}}</time>
         </div>
@@ -64,5 +63,9 @@ export default {
 
   .card {
     padding: .5em;
+  }
+
+  .description {
+    margin-bottom: 1em;
   }
 </style>

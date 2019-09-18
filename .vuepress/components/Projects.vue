@@ -2,7 +2,7 @@
   <div class="Projects">
     <div class="timeline columns is-vcentered is-centered">
       <header class="timeline-header">
-        <span class="tag is-large is-primary">{{
+        <span class="tag is-large">{{
           lang === "no" ? "Prosjekter" : "Projects"
         }}</span>
       </header>
@@ -11,7 +11,7 @@
         <Project :project="proj" :lang="lang"></Project>
       </div>
       <div class="timeline-header">
-        <span class="tag is-medium is-primary">{{
+        <span class="tag is-medium">{{
           lang === "no" ? "Nå" : "Now"
         }}</span>
       </div>
@@ -36,6 +36,10 @@ export default {
 <style lang="scss" scoped>
 @import "../sass/styles.scss";
 
+.timeline-header .tag {
+  color: white;
+  background-color: #576CA8;
+}
 .Projects {
   margin: 0 2em 0 2em;
 }

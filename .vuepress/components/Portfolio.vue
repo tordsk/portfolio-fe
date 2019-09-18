@@ -3,13 +3,18 @@
     <navbar :lang="language" @lang="language=$event"/>
     <helloman :info="info" :lang="language"></helloman>
     <projects :projects="projects" :lang="language"></projects>
+    <section class="section"/>
+    <work-experience :workplaces="work" :lang="language"/>
+    <education :educations="education" :lang="language"/>
   </div>
 </template>
 <script>
+import Education from "./Education";
 const axios = require("axios");
 export default {
   name: "Portfolio",
-    data() {
+  components: {Education},
+  data() {
     return {
       language: "no",
       info: {},

@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="info">
-          <h1 class="title is-1">Portifolio</h1>
+          <h1 class="title is-1">Portfolio</h1>
           <p v-if="info.short">{{ info.short[lang] }}</p>
         </div>
         <div class="image-container">
@@ -29,6 +29,9 @@ export default {
 <style lang="scss" scoped>
 @import "../sass/styles.scss";
 
+.hero.is-info {
+  background-color: #274690;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 50%));
